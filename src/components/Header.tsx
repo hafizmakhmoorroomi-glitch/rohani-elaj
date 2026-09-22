@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Shield, BookOpen, Sparkles, Printer } from 'lucide-react';
+import { Search, Shield, BookOpen, Sparkles, Printer, PhoneCall, GraduationCap, MessageCircle } from 'lucide-react';
 import { CategoryId } from '../types';
 import { CATEGORIES } from '../data/diseasesData';
 
@@ -32,6 +32,40 @@ export const Header: React.FC<Props> = ({
           <p className="text-[12px] sm:text-xs text-emerald-200/80 font-nastaliq mt-1">
             "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ" (اور جب میں بیمار ہوتا ہوں تو وہی مجھے شفا دیتا ہے)
           </p>
+        </div>
+
+        {/* Noon Wal Qalam Online Quran Academy & Contact */}
+        <div className="text-center max-w-3xl mx-auto mb-5 bg-black/25 backdrop-blur-xs border border-amber-400/40 rounded-3xl p-4 sm:p-5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/15 border border-amber-300/40 text-amber-200 text-xs sm:text-sm font-nastaliq font-bold mb-2">
+            <GraduationCap className="w-4 h-4 text-amber-300" />
+            <span>عالمی تعلیمی و روحانی مرکز</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black font-nastaliq text-amber-300 tracking-wide drop-shadow-md mb-2">
+            نون والقلم آن لائن قرآن اکیڈمی
+          </h2>
+
+          <p className="text-xs sm:text-sm md:text-base text-emerald-100 font-nastaliq leading-relaxed max-w-2xl mx-auto mb-3.5">
+            قرآنِ پاک کی تجوید و حفظ اور مستند روحانی علاج و مسنون طبِ نبوی ﷺ کے ذریعے قلبی و جسمانی شفا کی متلاشی انسانیت کی باوقار رہنمائی
+          </p>
+
+          {/* WhatsApp Direct Contact Button */}
+          <div className="inline-flex flex-wrap items-center justify-center gap-2.5">
+            <a
+              href="https://wa.me/923449466680?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%86%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%82%D9%84%D9%85%20%D8%A2%D9%86%20%D9%84%D8%A7%D8%A6%D9%86%20%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%DA%A9%DB%8C%DA%88%D9%85%DB%8C%20%D8%B3%DB%92%20%D8%AA%D8%B9%D9%84%DB%8C%D9%85%D9%90%20%D9%82%D8%B1%D8%A2%D9%86%20%D9%88%20%D8%B1%D9%88%D8%AD%D8%A7%D9%86%DB%8C%20%D8%B9%D9%84%D8%A7%D8%AC%20%DA%A9%DB%92%20%D8%AD%D9%88%D8%A7%D9%84%DB%92%20%D8%B3%DB%92%20%D8%B1%D8%A7%D8%A8%D8%B7%DB%81"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-4 py-2 sm:px-5 sm:py-2.5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 border border-emerald-400/80 text-white font-nastaliq font-bold shadow-md hover:shadow-xl transition-all flex items-center gap-2.5 text-xs sm:text-sm"
+              dir="ltr"
+            >
+              <span className="w-2.5 h-2.5 rounded-full bg-lime-300 animate-pulse" />
+              <MessageCircle className="w-4 h-4 text-lime-200" />
+              <span className="font-sans font-bold tracking-wider text-amber-200 text-sm sm:text-base">0344-9466680</span>
+              <span className="font-nastaliq text-white border-l border-emerald-400/60 pl-2">
+                رابطہ برائے وٹس ایپ
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Title and Subtitle */}

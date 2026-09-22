@@ -16,6 +16,7 @@ import {
   PhoneCall,
   Printer,
   ChevronLeft,
+  MessageCircle,
 } from 'lucide-react';
 
 export default function App() {
@@ -144,19 +145,60 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-stone-900 text-stone-300 border-t border-stone-800 py-8 px-4 text-center mt-12 font-nastaliq text-xs leading-relaxed">
-        <div className="max-w-4xl mx-auto space-y-3">
+      <footer className="bg-stone-900 text-stone-300 border-t border-stone-800 py-10 px-4 text-center mt-12 font-nastaliq text-xs leading-relaxed">
+        <div className="max-w-4xl mx-auto space-y-4">
           <p className="font-quran text-lg text-amber-400">
             وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ
           </p>
+          
+          <div className="bg-stone-800/80 border border-amber-500/30 rounded-2xl p-4 max-w-xl mx-auto space-y-2">
+            <h4 className="text-base sm:text-lg font-bold text-amber-300">
+              نون والقلم آن لائن قرآن اکیڈمی
+            </h4>
+            <p className="text-stone-300 text-xs">
+              آن لائن تعلیمِ قرآن (ناظرہ و حفظ مع تجوید) اور مسنون روحانی رہنمائی کے لیے ہمہ وقت دستیاب
+            </p>
+            <div className="pt-1 flex items-center justify-center gap-2">
+              <a
+                href="https://wa.me/923449466680?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%86%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%82%D9%84%D9%85%20%D8%A2%D9%86%20%D9%84%D8%A7%D8%A6%D9%86%20%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%DA%A9%DB%8C%DA%88%D9%85%DB%8C%20%D8%B3%DB%92%20%D8%B1%D8%A7%D8%A8%D8%B7%DB%81"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold transition shadow-xs"
+                dir="ltr"
+              >
+                <MessageCircle className="w-4 h-4 text-lime-200" />
+                <span className="font-sans font-bold text-sm tracking-wider text-amber-200">0344-9466680</span>
+                <span className="text-xs font-nastaliq pl-1 border-l border-emerald-400/50">وٹس ایپ پر رابطہ کریں</span>
+              </a>
+            </div>
+          </div>
+
           <p className="text-stone-400 max-w-2xl mx-auto">
             شرعی و طبی نوٹ: تمام قرآنی وظائف اور نبوی علاج باعثِ برکت و شفا ہیں۔ تاہم کسی بھی شدید جسمانی ایمرجنسی میں مستند ڈاکٹر یا طبیب سے رجوع کرنا بھی سنتِ نبوی کے عین مطابق ہے۔ شفا فقط ربِ کائنات کے حکم سے ہوتی ہے۔
           </p>
           <div className="text-stone-500 text-[11px] pt-3 border-t border-stone-800 font-arabic">
-            روحانی علاج و طبِ نبوی انسائیکلوپیڈیا — تمام حقوق محفوظ ہیں
+            نون والقلم آن لائن قرآن اکیڈمی — روحانی علاج و طبِ نبوی انسائیکلوپیڈیا
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Quick Contact Button */}
+      <a
+        href="https://wa.me/923449466680?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85!%20%D9%86%D9%88%D9%86%20%D9%88%D8%A7%D9%84%D9%82%D9%84%D9%85%20%D8%A2%D9%86%20%D9%84%D8%A7%D8%A6%D9%86%20%D9%82%D8%B1%D8%A2%D9%86%20%D8%A7%DA%A9%DB%8C%DA%88%D9%85%DB%8C%20%D8%B3%DB%92%20%D8%AA%D8%B9%D9%84%DB%8C%D9%85%D9%90%20%D9%82%D8%B1%D8%A2%D9%86%20%D9%88%20%D8%B1%D9%88%D8%AD%D8%A7%D9%86%DB%8C%20%D8%B9%D9%84%D8%A7%D8%AC%20%DA%A9%DB%92%20%D8%AD%D9%88%D8%A7%D9%84%DB%92%20%D8%B3%DB%92%20%D8%B1%D8%A7%D8%A8%D8%B7%DB%81"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="رابطہ برائے وٹس ایپ نون والقلم آن لائن قرآن اکیڈمی"
+        className="fixed bottom-5 left-5 z-40 bg-emerald-600 hover:bg-emerald-500 text-white px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full shadow-2xl flex items-center gap-2 border-2 border-emerald-400 hover:scale-105 transition-transform"
+      >
+        <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-300 opacity-75" />
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-lime-400" />
+        </span>
+        <MessageCircle className="w-5 h-5 text-white" />
+        <span className="font-nastaliq text-xs font-bold text-white pr-1">
+          وٹس ایپ: <span className="font-sans font-bold" dir="ltr">0344-9466680</span>
+        </span>
+      </a>
 
       {/* Wazifa Counter Modal */}
       {counterDisease && (

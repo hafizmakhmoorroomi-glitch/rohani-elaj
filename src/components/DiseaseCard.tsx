@@ -90,6 +90,10 @@ ${disease.propheticRemedy ? disease.propheticRemedy.title + ' - ' + disease.prop
     financial: { bg: 'bg-teal-50', text: 'text-teal-800', border: 'border-teal-200' },
     legal: { bg: 'bg-rose-50', text: 'text-rose-800', border: 'border-rose-200' },
     fitness: { bg: 'bg-lime-50', text: 'text-lime-900', border: 'border-lime-300' },
+    'womens-health': { bg: 'bg-pink-50', text: 'text-pink-900', border: 'border-pink-200' },
+    addiction: { bg: 'bg-red-50', text: 'text-red-900', border: 'border-red-200' },
+    education: { bg: 'bg-cyan-50', text: 'text-cyan-900', border: 'border-cyan-200' },
+    sleep: { bg: 'bg-violet-50', text: 'text-violet-900', border: 'border-violet-200' },
   };
 
   const colors = categoryColorMap[disease.categoryId] || categoryColorMap.physical;

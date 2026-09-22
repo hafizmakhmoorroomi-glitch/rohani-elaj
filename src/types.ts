@@ -1,4 +1,16 @@
-export type CategoryId = 'all' | 'physical' | 'psychological' | 'spiritual' | 'family' | 'financial' | 'legal' | 'fitness';
+export type CategoryId =
+  | 'all'
+  | 'physical'
+  | 'psychological'
+  | 'spiritual'
+  | 'family'
+  | 'financial'
+  | 'legal'
+  | 'fitness'
+  | 'womens-health'
+  | 'addiction'
+  | 'education'
+  | 'sleep';
 
 export interface NaqshConfig {
   title: string;
@@ -35,7 +47,7 @@ export interface Disease {
   number: number;
   titleUrdu: string;
   titleEnglish: string;
-  categoryId: 'physical' | 'psychological' | 'spiritual' | 'family' | 'financial' | 'legal' | 'fitness';
+  categoryId: Exclude<CategoryId, 'all'>;
   categoryTitleUrdu: string;
   spiritualDiagnosis: {
     element: string; // e.g., "آتشی عنصر / خون کی حدت", "سوداوی کیفیت / زحل کی نحوست"
