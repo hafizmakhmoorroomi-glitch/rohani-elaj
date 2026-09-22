@@ -1,0 +1,6 @@
+{
+  "name": "روحانی علاج و طبِ نبوی",
+  "description": "قرآنی وظائف، نبوی علاج، روحانی تشخیص اور مستند نقوش برائے جملہ جسمانی، نفسیاتی، صحت و فٹنس، خاندانی، معاشی اور قانونی مسائل",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

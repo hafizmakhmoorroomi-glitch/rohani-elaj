@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-nastaliq: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+    --font-quran: 'Amiri', 'Traditional Arabic', serif;
+    --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+  }
+}
+
+.font-nastaliq {
+  font-family: var(--font-nastaliq);
+  line-height: 2.1;
+}
+
+.font-quran {
+  font-family: var(--font-quran);
+  line-height: 2.2;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+/* Islamic pattern subtle background */
+.bg-islamic-pattern {
+  background-color: #faf8f5;
+  background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#15803d 0.75px, #faf8f5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Print styling for Naqsh and Prescriptions */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
